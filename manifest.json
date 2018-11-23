@@ -1,0 +1,26 @@
+{
+   "author": "ngocthieu521@gmail.com",
+   "background": {
+      "scripts": [ "bg.js", "stickers.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "js": [ "inject.js" ],
+      "matches": [ "*://*.facebook.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Giúp vOzer sử dụng sticker vOz trên Phê tê bóc",
+   "icons": {
+      "128": "icon.png"
+   },
+   "key": "MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQD2g/sw8FnnvujTpHxFsN79mekHpcjp1Q91B38PY0XTAyRdy72TavGaN7cbi8dP1NDnYeN1rrmd+klyxAIAnftx7yDB2udybpxY23hXDHcta0E3YD6e7h3U3seuJk56+O2IHAzLi/cuXgvPNwQ5RVUEeWvVAQG0Fp4b0ZXllDfcg0LBlS46uq9FNTPYLlt3w2JdiknB++RbTtUw6FuZCg484gPhTR3CGObzj77wXIUyCOwR5TkGmw7v4itS1INB68f3FSJveyVmf24ll73X94zzMnR+LonUg1Hn0arGtrvA7oRtIPYqvbp++MzOJaW4VXdGuZmiwX0TZPfE0owR/8+lAgMBAAECggEAH7cpPnRId4VbT7y4yaqQyzsy/Os6Zxh5+EoyRwOJpzVJ8iX/9OhsabVDV0WWK1IrslPTaipER+vnPomzNuscajMkGWzAHDvY3PcXi3OCHb4lJ3+4GXB0jBTsHHQMjXZbRl39fhk61aSp4PX+EsmLFPFI4KBUMhw60+9qA/McIMAjK0Anx6tGBscJUaukDaFB6ai0Uyzfx5RMYRCj4IAq9hewZ/GGCxeVxMyZeJZljgUpyMkHcI31yUTJiwQRLAWpvESjA0K7JViy2NWHG1MFxYBzz6QAzucAz9FoekLtHxOXsowmTdoktgYZ9aDDWn9PxP0zyOFtxMSFWJDfFveC/QKBgQD98qfUAylmTeDl6Yek4TwMNGtzzM1DUXjL1LibIIz9j8IaZtnwdF8nb0g7bta3AcDTh8+qDN5KiSJDhyhq/TPXqOluZeYibXLW2xLOHAqAJJdcFU24WmEqGS/J4dFR8lUimwkhlEE6wK6Wd7gbpgqkr50gJMrweSOpcbByLVvhewKBgQD4gfNIOl6KIYe7+NgHcXUp7RYxe1WgAKJU8I25IQPY2ncgStrfb/wiGYbE63BDt2Ew0fnxVwberXRukTKAH4KZudUNb4Oh4kCTEysomyln/25KzBXyooz03ZgQC7oGX00942yVqwxBO8puK8IBmQHgIfI3yWfPI68KOIJt27x5XwKBgCQdJhDYgkKyQJFxrICeJ1P1AHLvZSF1rKAQGFC3SFWm5AutJME1S3LoOHV7Rb2w2iM65SVhvxsKdXz086KDb6PzuX6hryCmP/aeIQZ+pl+i1IOb4/mboMXD3y/ulT36IHFTavEDjGM2k52CWQRVkJ3q+4Veth2MnK20JUuXd8GRAoGAKyXNCuZvkcY+ngmX4Lr3X981ckP62vwhM2RNBy7PTzCnbGjy1cbI3VbXSouig29spaBfqGK246T0SVpWjV5rO6vDbUDGdy4kjiTO4o8GQnNcQAptaSKGHOH4zBhtJTwY2j0JlncLeqwZ+sUIO2TIqZTbTIpgxttoQfsL0m1LrTsCgYBoSPFM3YigrffgwFpuHi8Zx+TaXrPjmGqDOgh7CBxzwpPECcepthVnZqoyxzqdxiDriMTXukasMRmfcaWNtyA9qq2buxgN2qanSKC9fq9Ag0FQVRTpH/p7C1gtDGkNjIadb1jmL4MLQHK2cJ7drp3iBKVYQcS/cFp/hMPD2x2Brg==",
+   "manifest_version": 2,
+   "name": "vOz sticker for Phê tê bóc",
+   "permissions": [ "tabs", "storage", "webRequest", "\u003Call_urls>" ],
+   "update_url": "https://drive.google.com",
+   "version": "1.0.0",
+   "web_accessible_resources": [ "icons/*", "stickers/*", "categories/*" ]
+}
